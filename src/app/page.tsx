@@ -250,12 +250,12 @@ export default function HomePage() {
           {/* Left Column: Big Headlines & CTA */}
           <div className="hero-left-col">
             <h1 className="hero-giant-title">
-              <span className="title-row">Magic</span>
-              <span className="title-row">From 3D</span>
+              <span className="title-row">Free 2D</span>
+              <span className="title-row">to 3D AI</span>
             </h1>
 
             <p className="hero-scope-subtitle">
-              We propose to create 3Ds with the help of AI and to animate them immediately. Upload any 2D photo and instantly extract textured 3D meshes.
+              Generate a free 3D model from any 2D image in seconds. Upload a JPG, PNG, or WEBP photo and our AI instantly reconstructs a textured GLB mesh — no signup, no cost.
             </p>
 
             <div className="hero-cta-wrap">
@@ -325,8 +325,8 @@ export default function HomePage() {
         <main className="upload-section-wrap" id="generator-section" ref={generatorRef}>
           <div className="emerald-panel-card">
             <div className="panel-header">
-              <span className="panel-tag">AI 3D RECONSTRUCTION ENGINE</span>
-              <h2 className="panel-title">Upload Photo & Select Model</h2>
+              <span className="panel-tag">FREE 2D IMAGE TO 3D MODEL GENERATOR</span>
+              <h2 className="panel-title">Upload Your Photo &amp; Generate a Free 3D Model</h2>
             </div>
 
             {/* Upload Zone */}
@@ -419,21 +419,54 @@ export default function HomePage() {
           </div>
 
           {/* Features Section */}
-          <section className="features-grid" id="features-section" aria-label="Key Capabilities">
+          <section className="features-grid" id="features-section" aria-label="Key Capabilities of Free 2D to 3D Model Generator">
             <div className="feature-card">
               <div className="feature-icon">⚡</div>
-              <h3 className="feature-title">Instant 3D Reconstruction</h3>
-              <p className="feature-desc">Converts single 2D images into textured 3D meshes using neural radiance & implicit shape AI networks.</p>
+              <h3 className="feature-title">Instant 2D to 3D Reconstruction</h3>
+              <p className="feature-desc">Convert any single 2D image into a fully textured 3D mesh in seconds. Powered by neural radiance fields and implicit shape AI networks — no 3D expertise needed.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🎨</div>
-              <h3 className="feature-title">PBR Textures & UV Maps</h3>
-              <p className="feature-desc">Automatically generates UV unwrapping and extracts high-fidelity vertex color & surface material maps.</p>
+              <h3 className="feature-title">Free PBR Textures &amp; UV Maps</h3>
+              <p className="feature-desc">Automatically generates UV unwrapping and extracts high-fidelity vertex color &amp; PBR surface material maps. Download your textured 3D model for free with no watermarks.</p>
             </div>
             <div className="feature-card" id="rewards-section">
               <div className="feature-icon">🎮</div>
-              <h3 className="feature-title">Universal Engine Format</h3>
-              <p className="feature-desc">Exports standard GLB (glTF 2.0) files ready for Blender, Unity 3D, Unreal Engine 5, & WebGL viewers.</p>
+              <h3 className="feature-title">GLB / glTF 2.0 — Universal Format</h3>
+              <p className="feature-desc">Exports industry-standard GLB (glTF 2.0) files ready to import into Blender, Unity 3D, Unreal Engine 5, Three.js, &amp; any WebGL viewer.</p>
+            </div>
+          </section>
+
+          {/* About / SEO Content Section */}
+          <section className="features-grid" aria-label="About Free 2D Image to 3D Model Generator" style={{ marginTop: "0" }}>
+            <div className="feature-card" style={{ gridColumn: "1 / -1" }}>
+              <div className="feature-icon">🤖</div>
+              <h3 className="feature-title">How Our Free AI 3D Model Generator Works</h3>
+              <p className="feature-desc" style={{ maxWidth: "720px", lineHeight: "1.7" }}>
+                3DGen AI uses state-of-the-art open-source AI models — <strong>TripoSR</strong>, <strong>InstantMesh</strong>, and <strong>Image-to-3D</strong> — hosted on Hugging Face ZeroGPU to
+                convert your 2D photo into a 3D model instantly, completely free. Simply upload a JPG, PNG, or WEBP image (up to 10 MB), pick your preferred AI engine,
+                and download a ready-to-use GLB file within seconds. No account, no watermark, no cost — just free 2D image to 3D model generation.
+              </p>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section className="features-grid" id="faq-section" aria-label="Frequently Asked Questions" style={{ marginTop: "0" }}>
+            <div className="feature-card" style={{ gridColumn: "1 / -1" }}>
+              <div className="feature-icon">❓</div>
+              <h2 className="feature-title" style={{ fontSize: "1.1rem" }}>Frequently Asked Questions</h2>
+            </div>
+            <div className="feature-card">
+              <h3 className="feature-title" style={{ fontSize: "0.95rem" }}>How do I convert a 2D image to a 3D model for free?</h3>
+              <p className="feature-desc">Upload your JPG, PNG, or WEBP image, choose an AI model (TripoSR is fastest at ~5 s), and click Generate. Your free GLB 3D model downloads instantly — no account required.</p>
+            </div>
+            <div className="feature-card">
+              <h3 className="feature-title" style={{ fontSize: "0.95rem" }}>Is this 3D model generator really free?</h3>
+              <p className="feature-desc">Yes — 100% free. Powered by Hugging Face ZeroGPU and open-source AI. No signup, no credit card, no hidden fees, no watermarks on your exported GLB files.</p>
+            </div>
+            <div className="feature-card">
+              <h3 className="feature-title" style={{ fontSize: "0.95rem" }}>What images work best for 2D to 3D conversion?</h3>
+              <p className="feature-desc">Single-subject images on a clean background produce the best 3D models — characters, weapons, vehicles, furniture, statues, and product photos. Supported: JPG, PNG, WEBP up to 10 MB.</p>
             </div>
           </section>
         </main>
@@ -469,14 +502,14 @@ export default function HomePage() {
       <footer className="scope-footer">
         <div className="footer-container">
           <p className="footer-text">
-            Powered by{" "}
+            Free 2D Image to 3D Model Generator · Powered by{" "}
             <a href="https://huggingface.co" className="footer-link" target="_blank" rel="noopener noreferrer">Hugging Face ZeroGPU</a>
             {" "}·{" "}
             <a href="https://threejs.org" className="footer-link" target="_blank" rel="noopener noreferrer">Three.js WebGL</a>
-            {" "}· Open Source AI Models (TripoSR · InstantMesh · Image-to-3D)
+            {" "}· Open-Source AI Models (TripoSR · InstantMesh · Image-to-3D)
           </p>
           <p className="footer-subtext">
-            © 2026 3DGen AI — All rights reserved. 3D models reconstructed via neural AI networks.
+            © 2026 3DGen AI — All rights reserved. Convert 2D photos to free GLB 3D models via neural AI reconstruction.
           </p>
         </div>
       </footer>

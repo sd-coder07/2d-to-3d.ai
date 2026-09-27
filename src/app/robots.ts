@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://3d-gen-ai-chi.vercel.app/sitemap.xml',
+    sitemap: 'https://2d-to-3d-model.vercel.app/sitemap.xml',
   }
 }
